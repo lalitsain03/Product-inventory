@@ -1,0 +1,30 @@
+<% layout("layouts/boilerplate") %>
+
+    <div class="container my-4">
+        <h2 class="mb-4 text-center">Product Inventory</h2>
+
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-4">
+            <% for (product of products) { %>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary">
+                                <%= product.name %>
+                            </h5>
+                            <h6 class="card-subtitle mb-3 text-success fw-semibold">&#8377; <%= product.price.toFixed(2)
+                                    %>
+                            </h6>
+                            <p class="card-text mb-1"><strong>Quantity:</strong>
+                                <%= product.quantity %>
+                            </p>
+                            <p class="card-text mb-3"><strong>Category:</strong>
+                                <%= product.category %>
+                            </p>
+                            <a href="/products/<%= product._id %>"
+                                class="btn btn-outline-primary mt-auto align-self-start">Show Details</a>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>

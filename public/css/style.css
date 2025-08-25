@@ -1,0 +1,85 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F9FAFB !important;
+    color: #1F2937 !important;
+}
+
+.container {
+    flex: 1;
+}
+
+/* navbar */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+
+}
+
+
+.edit-btn {
+    background-color: #4F46E5 !important;
+}
+
+.del-btn {
+    background-color: #14B8A6 !important;
+}
+
+/* cards  */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    margin: 10px 20px 10px 20px;
+}
+
+
+
+.card-text p {
+    font-weight: 400;
+}
+
+.card-link {
+    text-decoration: none !important;
+    color: black !important;
+}
